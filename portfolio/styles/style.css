@@ -8,7 +8,7 @@
     --clr-indigo: #e26d5a;
     --clr-gray:hsl(0 0% 100% /0.2);
     --clr-rose-btn: #ec7490;
-    --color-bg1: rgb(108, 0, 162);
+    --color-bg1: rgb(71, 2, 105);
     --color-bg2: rgb(0, 17, 82);
     --color1: 18, 113, 255;
     --color2: 221, 74, 255;
@@ -175,7 +175,7 @@ body::-webkit-scrollbar-thumb{
   height: 700px;
   position: absolute;
   overflow: hidden;
-  background: linear-gradient(40deg, var(--color-bg1), var( --color-bg2));
+  background: linear-gradient(40deg, var(--clr-rose ), var(--color-bg1));
   bottom: 0px;
   z-index:-2 ;
 
@@ -307,7 +307,7 @@ body::-webkit-scrollbar-thumb{
     left: 0;
     transform: translate(-50%, -50%);
     background: var(--clr-light);
-    z-index: 999;
+    z-index: 9999;
     pointer-events: none;
   }
   .cursor-follow{
@@ -320,7 +320,7 @@ body::-webkit-scrollbar-thumb{
     transform: translate(-50%, -50%);
     background: transparent;
     border: 1px solid var(--clr-light);
-    z-index:999;
+    z-index:9999;
     pointer-events:none ;
   }
 }

@@ -13,10 +13,10 @@ import mobilenav  from './utils/mobile-nav';
 import darkMode  from './utils/dark-theme';
 mobilenav();
 darkMode();
-// window.addEventListener("mousemove", (e) => {
-//     gsap.to(".cursor",{x: e.clientX , y: e.clientY})
-//     gsap.to(".cursor-follow",{x: e.clientX , y: e.clientY, duration: 1.5, ease: "power3.out" })
-// })
+window.addEventListener("mousemove", (e) => {
+    gsap.to(".cursor",{x: e.clientX , y: e.clientY})
+    gsap.to(".cursor-follow",{x: e.clientX , y: e.clientY, duration: 1.5, ease: "power3.out" })
+})
 const scrollers = document.querySelectorAll(".scroller");
 if(!window.matchMedia("(prefers-reduced-motion: reduce)").matches){
     addAnimation();
