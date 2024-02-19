@@ -329,10 +329,17 @@
 
     }
 } */
-@media (min-width:510px)  {
-    .work::after, .work::before{
-        bottom: 303px;
+/* @media (min-width: 510px) and (any-hover: hover) {
+    .work::after,
+    .work::before {
+        bottom: 303px !important; 
+    }
+} */
 
+@media screen and (min-width: 510px) {
+    .work::after,
+    .work::before {
+        bottom: 303px;
     }
 }
 @media (min-width:518px)  {

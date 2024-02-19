@@ -97,11 +97,11 @@
 }
 .about__content .a_2{
     animation-range-start: cover 38vh;
-    animation-range-end: contain 40vh;
+    animation-range-end: contain 38vh;
 }
 .about__content p .sp_6{
-    animation-range-start: cover 42.5vh;
-    animation-range-end: contain 41vh;
+    animation-range-start: cover 39vh;
+    animation-range-end: contain 39vh;
 }
 @keyframes scroll-reveal {
     to {

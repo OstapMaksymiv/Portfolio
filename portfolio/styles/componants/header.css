@@ -6,6 +6,13 @@
     padding-top: 2rem;
     padding-bottom: 2rem;
     position: relative;
+    z-index: 99999;
+    background-color: var(--clr-dark);
+    /* height: 116px; */
+    /* top: 0; */
+    transition: all .25s cubic-bezier(.645,.045,.355,1);
+    top:0 ;
+    /* position: relative; */
     /* background-color: transparent; */
     /* z-index:999 ;
     width: 100%;
@@ -16,8 +23,14 @@
     width: 100%;
     background-color:var(--clr-dark) ; */
 }
+.header__scroll-up{
+    top:0;
+}
+.header__scroll-down{
+    top:-100px;
+}
 .header__menu{
-    display: none;
+    display:none;
 }
 .header__bars{
     color: var(--clr-light);
@@ -26,6 +39,41 @@
     display: block;
 
 }
+.new_svg{
+    display: none;
+}
+/* .header__link{
+    font-size: var(--size-xs);
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--clr-slate600);
+    letter-spacing: -0.05em;
+    transition: color .5s;
+}
+.header__link:hover{
+    color: var(--clr-rose);
+}
+.header__line{
+    border: 1px solid var(--clr-slate600);
+    padding-top: 1.5em;
+}
+.header__sun{
+    color: var(--clr-slate600);
+    width:var(--size-base) ;
+    height:var(--size-base) ;
+    display: block;
+
+}
+.header__resume{
+    font-size:var(--size-xs);
+}
+.header__bars{
+    color: var(--clr-light);
+    width: var(--size-2xl);
+    height: var(--size-2xl);
+    display: block;
+
+} */
 /* .blur-header::after{
     content: '';
     position: absolute;
@@ -46,6 +94,7 @@
 } */
 @media (min-width:768px)  {
     .header__menu{
+        /* display: none; */
         display: flex;
         align-items: center;
         list-style: none;
@@ -60,9 +109,6 @@
         letter-spacing: -0.05em;
         transition: color .5s;
     }
-    .header__link:hover{
-        color: var(--clr-rose);
-    }
     .header__line{
         border: 1px solid var(--clr-slate600);
         padding-top: 1.5em;
@@ -73,9 +119,6 @@
         height:var(--size-base) ;
         display: block;
         transition: color .5s;
-    }
-    .header__sun:hover{
-        color: var(--clr-rose);
     }
     .header__resume{
         font-size:var(--size-xs);
@@ -97,9 +140,8 @@
         font-size:var(--size-sm);
     }
 }
-/* @media (min-width:1280px)  {
-
-} */
-/* @media (min-width:1536px)  {
-
-} */
+@media (any-hover: hover){
+    .header__link:hover, .header__sun:hover{
+        color: var(--clr-rose);
+    }
+}
