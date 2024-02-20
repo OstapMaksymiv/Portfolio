@@ -20,7 +20,7 @@ const mobilenav = () => {
     let initialWindowWidth = window.innerWidth;
     barss.addEventListener("click", () => {
         ismobileopen = !ismobileopen;
-        // window.scrollTo(0, 0);
+        window.scrollTo(0, 0);
         if(ismobileopen){
 
             mbnav.classList.add("mobile-nav-active")
