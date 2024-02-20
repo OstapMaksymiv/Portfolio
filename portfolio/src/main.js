@@ -15,11 +15,11 @@ mobilenav();
 darkMode();
 // const cursor = document.querySelector(".cursor");
 // const cursor_follow = document.querySelector(".cursor-follow");
-const scrollUp = () => {
-    const scrollUp = document.getElementById('scroll-up');
-    window.scrollY >= 450 ? scrollUp.classList.add('show-scroll') : scrollUp.classList.remove('show-scroll');
-}
-window.addEventListener('scroll', scrollUp);
+// const scrollUp = () => {
+//     const scrollUp = document.getElementById('scroll-up');
+//     window.scrollY >= 450 ? scrollUp.classList.add('show-scroll') : scrollUp.classList.remove('show-scroll');
+// }
+// window.addEventListener('scroll', scrollUp);
 
 // window.addEventListener("mousemove", (e) => {
 //     gsap.to(".cursor",{x: e.clientX , y: e.clientY})
@@ -67,14 +67,10 @@ function handleScroll() {
         target.classList.remove('header__scroll-down');
         target.classList.add('header__scroll-up');
         target.style.position = "sticky"
-
-        console.log("asdasd");
     } else {
         target.classList.remove('header__scroll-up');
         target.classList.add('header__scroll-down');
         // target.style.position = "relative"
- 
-        console.log("asdasd123");
     }
     prevScrollPos = currentScrollPos;
 }

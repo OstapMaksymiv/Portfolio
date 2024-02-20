@@ -34,6 +34,7 @@ const mobilenav = () => {
     header__links.forEach(element => {
         element.addEventListener('click', ()=> {
             target.classList.remove('header__scroll-up');
+            console.log("1111");
             target.classList.add('header__scroll-down');
         })
     });

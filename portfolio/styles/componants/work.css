@@ -51,7 +51,7 @@
 }
 .work__img-wrapper{
     position: relative;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 .work__img-wrapper::after{
     content: '';

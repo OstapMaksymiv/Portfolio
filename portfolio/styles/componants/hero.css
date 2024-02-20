@@ -64,44 +64,44 @@
 }
 .about__content h2 span{
 
-    animation-range-start: cover 10vh;
-    animation-range-end: cover 15vh;
+    animation-range-start: cover 10%;
+    animation-range-end: cover 15%;
 }
 .about__content p .sp_1{
-    animation-range-start: cover 5vh;
-    animation-range-end: contain 15vh;
+    animation-range-start: cover 5%;
+    animation-range-end: contain 15%;
 }
 .about__description strong{
-    animation-range-start: cover 17.5vh;
-    animation-range-end: contain 20vh;
+    animation-range-start: cover 17.5%;
+    animation-range-end: contain 20%;
 }
 .about__content p .sp_2{
-    animation-range-start: cover 23vh;
-    animation-range-end: contain 25vh;
+    animation-range-start: cover 23%;
+    animation-range-end: contain 25%;
 }
 .about__content p .sp_3{
-    animation-range-start: cover 21vh;
-    animation-range-end: contain 27vh;
+    animation-range-start: cover 21%;
+    animation-range-end: contain 27%;
 }
 .about__content p .sp_4{
-    animation-range-start: cover 23vh;
-    animation-range-end: contain 27vh;
+    animation-range-start: cover 23%;
+    animation-range-end: contain 27%;
 }
 .about__content .a_1{
-    animation-range-start: cover 30vh;
-    animation-range-end: contain 31vh;
+    animation-range-start: cover 30%;
+    animation-range-end: contain 31%;
 }
 .about__content p .sp_5{
-    animation-range-start: cover 33.5vh;
-    animation-range-end: contain 35vh;
+    animation-range-start: cover 33.5%;
+    animation-range-end: contain 35%;
 }
 .about__content .a_2{
-    animation-range-start: cover 38vh;
-    animation-range-end: contain 38vh;
+    animation-range-start: cover 38%;
+    animation-range-end: contain 38%;
 }
 .about__content p .sp_6{
-    animation-range-start: cover 39vh;
-    animation-range-end: contain 39vh;
+    animation-range-start: cover 39%;
+    animation-range-end: contain 39%;
 }
 @keyframes scroll-reveal {
     to {
