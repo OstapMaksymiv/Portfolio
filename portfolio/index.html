@@ -10,355 +10,357 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
     <title>Ostap Maksymiv</title>
   </head>
-  <body>
-      <header class='header container' id="header">
-        <div>
-          <img class="header__img" src="./public/logo_coppy.png" alt="">
+  <div class="highter_body">
+    <body>
+        <header class='header container' id="header">
+          <div>
+            <img class="header__img" src="./public/logo_coppy.png" alt="">
+          </div>
+          <nav>
+            <ul class="header__menu">
+              <li>
+                <a class="header__link" href="#about">About</a>
+              </li>
+              <li>
+                <a class="header__link" href="#work">Projects</a>
+              </li>
+              <li>
+                <a class="header__link" href="#contact">Contact</a>
+              </li>
+              <li class="header__line"></li>
+              <li>
+                <button id="theme-toggle" class="header__sun">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z" />
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <a class="header__resume btn" target="_blank" href="./public/portfolio.pdf">Resume</a>
+              </li>
+            </ul>
+            <button class="header__bars">
+              <svg class="older_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" >
+                <path fill-rule="evenodd" d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
+              </svg>
+  
+              <svg class="new_svg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+              </svg>  
+            </button>
+          </nav>
+        </header>
+    
+        <div class="mobile-nav">
+          <nav >
+            <!-- <button class="header__cross">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+              </svg>          
+            </button> -->
+            <ul class="mobile-nav__menu">
+              <li>
+                <a class="mobile-nav__link" href="#about">About</a>
+              </li>
+              <li>
+                <a class="mobile-nav__link" href="#work">Projects</a>
+              </li>
+              <li>
+                <a class="mobile-nav__link" href="#contact">Contact</a>
+              </li>
+              <li class="mobile-nav__link-line"></li>
+              <li>
+                <button id="theme-toggle" class="mobile-nav__sun">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z" />
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <a class="mobile-nav__btn btn" target="_blank" href="./public/portfolio.pdf">Resume</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <nav>
-          <ul class="header__menu">
-            <li>
-              <a class="header__link" href="#about">About</a>
-            </li>
-            <li>
-              <a class="header__link" href="#work">Projects</a>
-            </li>
-            <li>
-              <a class="header__link" href="#contact">Contact</a>
-            </li>
-            <li class="header__line"></li>
-            <li>
-              <button id="theme-toggle" class="header__sun">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z" />
-                </svg>
-              </button>
-            </li>
-            <li>
-              <a class="header__resume btn" target="_blank" href="./public/portfolio.pdf">Resume</a>
-            </li>
-          </ul>
-          <button class="header__bars">
-            <svg class="older_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" >
-              <path fill-rule="evenodd" d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
-            </svg>
-
-            <svg class="new_svg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-            </svg>  
-          </button>
-        </nav>
-      </header>
-  
-      <div class="mobile-nav">
-        <nav >
-          <!-- <button class="header__cross">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-            </svg>          
-          </button> -->
-          <ul class="mobile-nav__menu">
-            <li>
-              <a class="mobile-nav__link" href="#about">About</a>
-            </li>
-            <li>
-              <a class="mobile-nav__link" href="#work">Projects</a>
-            </li>
-            <li>
-              <a class="mobile-nav__link" href="#contact">Contact</a>
-            </li>
-            <li class="mobile-nav__link-line"></li>
-            <li>
-              <button id="theme-toggle" class="mobile-nav__sun">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z" />
-                </svg>
-              </button>
-            </li>
-            <li>
-              <a class="mobile-nav__btn btn" target="_blank" href="./public/portfolio.pdf">Resume</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-  
-      <main>
-        <section  class="hero container">
-          <img class="hero__img" src="/hero.jpeg" alt="">
-          <h2 class="hero__subtitle">Sup, I'm Ostap 🤙</h2>
-          <h1 class="hero__title">FRONT-END <br> WEB DEVELOPER.</h1>
-          <p class="hero__description">
-            An enthusiastic web developer proficient in <strong> React & JavaScript</strong> with a keen interest in crafting visually striking, pixel-perfect, and interactive websites and applications.</p>
-          <a href="mailto:ostaperad@gmail.com" target="_blank" class="btn">Reach out</a>
-        </section>
-        <section id="about" class="about container  ">
-          <div class="about__content">
-            <h2 class="about__title"><span>About</span></h2>
-            <p class="about__description">
-              <span class="sp_1">Hello there! I'm Ostap, a </span><strong>Frontend </strong><span class="sp_2">web developer.As I recently entrant into the field of programming, my journey has been characterized by enthusiasm and a commitment to continuous learning.</span></p>
-            <p class="about__description">
-              <span class="sp_3">Despite having started more recently, my passion drives me to rapidly gain experience in the industry. I am confident that this fervor will guide me towards success in the ever-evolving landscape of programming.</span>
+    
+        <main>
+          <section  class="hero container">
+            <img class="hero__img" src="./public/photo1708548990.jpeg" alt="">
+            <h2 class="hero__subtitle">Sup, I'm Ostap 🤙</h2>
+            <h1 class="hero__title">FRONT-END <br> WEB DEVELOPER.</h1>
+            <p class="hero__description">
+              An enthusiastic web developer proficient in <strong> React & JavaScript</strong> with a keen interest in crafting visually striking, pixel-perfect, and interactive websites and applications.</p>
+            <a href="mailto:ostaperad@gmail.com" target="_blank" class="btn">Reach out</a>
+          </section>
+          <section id="about" class="about container  ">
+            <div class="about__content">
+              <h2 class="about__title"><span>About</span></h2>
+              <p class="about__description">
+                <span class="sp_1">Hello there! I'm Ostap, a </span><strong>Frontend </strong><span class="sp_2">web developer.As I recently entrant into the field of programming, my journey has been characterized by enthusiasm and a commitment to continuous learning.</span></p>
+              <p class="about__description">
+                <span class="sp_3">Despite having started more recently, my passion drives me to rapidly gain experience in the industry. I am confident that this fervor will guide me towards success in the ever-evolving landscape of programming.</span>
+              </p>
+              <p class="about__description">
+                <span class="sp_4">Looking forward, I aim to delve into backend development, focusing on</span> <a href="#" class="a_1">Python and C#</a><span class="sp_5">. And gain insights 'bout </span><a class="a_2" href="#">Sql and noSql</a><span class="sp_6"> database.</span>
+              </p>
+              <hr class="about__hr">
+              
+            </div>
+            <!-- <img  class="about__img lazy" src="/about.jpg" alt="Profile picture"> -->
+            <div class="about__img-wrapper">
+              <h3 class="about__subtitle">Here are a few technologies in which I have some experience:</h3>
+              <div class="scroller" data-direction="left" data-speed="fast">
+                <ul class="tag-list scroller__inner">
+                  <li>HTML5</li>
+                  <li>CSS3</li>
+                  <li>JS</li>
+                  <li>React</li>
+                  <li>SCSS/SASS</li>
+                  <li>TypeScript</li>
+                </ul>
+              </div>
+              <div class="scroller" data-direction="right" data-speed="fast">
+                <ul class="tag-list scroller__inner">
+                  <li>Git</li>
+                  <li>Vite</li>
+                  <li>JQuery</li>
+                  <li>Bootstrap</li>
+                  <li>GSAP</li>
+                  <li>three.js</li>
+                </ul>
+              </div>
+            </div>
+              <!-- <div class="about__slider">
+              </div> -->
+          </section>
+          <section id="work" class="work container section">
+            <h2 class="work__title">Projects</h2>
+            <p class="work__description">
+              There are a few projects that I've already accomplished.
             </p>
-            <p class="about__description">
-              <span class="sp_4">Looking forward, I aim to delve into backend development, focusing on</span> <a href="#" class="a_1">Python and C#</a><span class="sp_5">. And gain insights 'bout </span><a class="a_2" href="#">Sql and noSql</a><span class="sp_6"> database.</span>
+            <div class="work__container">
+              <!-- Project 1 -->
+              <h3 class="work__project-title">Coffee-House</h3>
+              <div class="work__img-wrapper work__image1">
+                <img               class="lazy loading"
+                  src="/coffee-house.png"
+                  alt="Wax Motif website"
+                />
+              </div>
+              <div class="work__project work__content1">
+                <h3 class="work__project-subtitle">Coffee-House</h3>
+                <p class="work__project-description1">
+                  This web-site was done by: HTML5,CSS3,JavaScript
+                </p>
+                <p class="work__project-description2">
+                  This app highlights a delightful coffee shop, offering details on favorite coffee choices, the cozy ambiance, and the convenience of a mobile ordering app.
+                </p>
+                <a class="btn work__project-btn" target="_blank" href="https://ostapmaksymiv.github.io/Website-Coffee-House/coffe-house/">Website</a>
+              </div>
+              <!-- Project 2 -->
+              <h3 class="work__project-title">Tic-Tac-Toe</h3>
+              <div class="work__img-wrapper work__image2">
+                <img               class="lazy loading"
+                  src="/tic-tak-toe.png"
+                  alt="Draze Force website"
+                />
+              </div>
+              <div class="work__project work__content2">
+                <h3 class="work__project-subtitle">Tic-Tac-Toe</h3>
+                <p class="work__project-description1">
+                  This web-site was done by: HTML5,CSS3,JavaScript & TypeScript
+                </p>
+                <p class="work__project-description2">
+                  This project is a simple implementation of the classic Tic Tac Toe game.
+                  The main reason of doing it was to develop my OOP skills.
+                </p>
+                <a class="btn work__project-btn" target="_blank" href="https://ostapmaksymiv.github.io/tic-tac-toe-js/tic-tak-toe/">Website</a>
+              </div>
+              <!-- Project 3 -->
+              <!-- <h3 class="work__project-title">Artren</h3>
+              <div class="work__img-wrapper work__image3">
+                <img               class="lazy loading"
+                  src="/artren.png"
+                  alt="Artren website"
+                />
+              </div>
+              <div class="work__project work__content3">
+                <h3 class="work__project-subtitle">Artren</h3>
+                <p class="work__project-description1">
+                  Aliquip eu ad est reprehenderit veniam irure exercitation in velit
+                  enim ipsum.
+                </p>
+                <p class="work__project-description2">
+                  Elit est amet quis incididunt officia velit eiusmod do amet. Sint
+                  non qui nulla sit ex cillum non pariatur velit proident ut aliqua
+                  fugiat incididunt id minim.
+                </p>
+                <a class="btn work__project-btn" href="#">Website</a>
+              </div> -->
+              <!-- Project 4 -->
+              <!-- <h3 class="work__project-title">Platform Pro</h3>
+              <div class="work__img-wrapper work__image4">
+                <img               class="lazy loading"
+                  src="/platformpro.png"
+                  alt="Platform Pro website"
+                />
+              </div>
+              <div class="work__project work__content4">
+                <h3 class="work__project-subtitle">Platform Pro</h3>
+                <p class="work__project-description1">
+                  Labore magna ut non labore Lorem nisi culpa sint et quis sint.
+                  Enim pariatur deserunt do ad exercitation.
+                </p>
+                <p class="work__project-description2">
+                  Ea ut non cupidatat consequat sint elit ipsum culpa dolor cillum
+                  commodo. Do esse excepteur cillum deserunt duis incididunt. Eu
+                  tempor ullamco aliqua consectetur incididunt anim dolor sunt
+                  laboris adipisicing cupidatat sint.
+                </p>
+                <a class="btn work__project-btn" href="#">Website</a>
+              </div> -->
+              <!-- Project 5 -->
+              <!-- <h3 class="work__project-title">Wallys Vegan</h3>
+              <div class="work__img-wrapper work__image5">
+                <img               class="lazy loading"
+                  src="/wallysvegan.png"
+                  alt="Wallys Vegan website"
+                />
+              </div>
+              <div class="work__project work__content5">
+                <h3 class="work__project-subtitle">Wallys Vegan</h3>
+                <p class="work__project-description1">
+                  Sunt sint labore officia irure. Dolore pariatur nisi deserunt sunt
+                  exercitation excepteur do reprehenderit fugiat Lorem sint ut.
+                </p>
+                <p class="work__project-description2">
+                  Mollit ipsum mollit magna occaecat eiusmod sint fugiat est non
+                  adipisicing esse fugiat deserunt minim. Enim occaecat velit eu non
+                  amet nostrud officia duis.
+                </p>
+                <a class="btn work__project-btn" href="#">Website</a>
+              </div> -->
+              <!-- Project 6 -->
+              <!-- <h3 class="work__project-title">Old Portfolio</h3>
+              <div class="work__img-wrapper work__image6">
+                <img               class="lazy loading"
+                  src="/portfolio.png"
+                  alt="Portfolio website"
+                />
+              </div>
+              <div class="work__project work__content6">
+                <h3 class="work__project-subtitle">Old Portfolio</h3>
+                <p class="work__project-description1">
+                  Aliquip eu ad est reprehenderit veniam irure exercitation in velit
+                  enim ipsum.
+                </p>
+                <p class="work__project-description2">
+                  Elit est amet quis incididunt officia velit eiusmod do amet. Sint
+                  non qui nulla sit ex cillum non pariatur velit proident ut aliqua
+                  fugiat incididunt id minim.
+                </p>
+                <a class="btn work__project-btn" href="#">Website</a>
+              </div> -->
+            </div>
+          </section>
+          <!-- <section id="contact" class="contact container section">
+            <h3 class="contact__title">Get in Touch</h3>
+            <p class="contact__description">
+              Whether you are starting a project, have business inquiries or just want to say hi, my inbox is always open so feel free to reach out and I will get back to you as soon as possible.
             </p>
-            <hr class="about__hr">
-            
+            <a href="mailto:ostaperad@gmail.com" target="_blank" class="contact__btn btn">React out</a>
+          </section>
+        </main>
+        <footer class="footer container section">
+          <h3 class="footer__title">~ Ostap Maksymiv ~</h3>
+        </footer> -->
+        
+  
+        <div class="social fade-enter-done" style="animation-delay: 975ms;">
+          <div class="social__list">
+            <li class="social__item">
+              <a href="https://github.com/OstapMaksymiv" class="social__link" target="_blank">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                  </path>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="https://www.linkedin.com/in/ostap-maksymiv-60909a259/" class="social__link" target="_blank">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                  </path>
+                  <rect x="2" y="9" width="4" height="12">
+                  </rect>
+                  <circle cx="4" cy="4" r="2">
+                  </circle>
+                </svg>
+              </a>
+            </li>
           </div>
-          <!-- <img  class="about__img lazy" src="/about.jpg" alt="Profile picture"> -->
-          <div class="about__img-wrapper">
-            <h3 class="about__subtitle">Here are a few technologies in which I have some experience:</h3>
-            <div class="scroller" data-direction="left" data-speed="fast">
-              <ul class="tag-list scroller__inner">
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JS</li>
-                <li>React</li>
-                <li>SCSS/SASS</li>
-                <li>TypeScript</li>
-              </ul>
-            </div>
-            <div class="scroller" data-direction="right" data-speed="fast">
-              <ul class="tag-list scroller__inner">
-                <li>Git</li>
-                <li>Vite</li>
-                <li>JQuery</li>
-                <li>Bootstrap</li>
-                <li>GSAP</li>
-                <li>three.js</li>
-              </ul>
-            </div>
-          </div>
-            <!-- <div class="about__slider">
-            </div> -->
-        </section>
-        <section id="work" class="work container section">
-          <h2 class="work__title">Projects</h2>
-          <p class="work__description">
-            There are a few projects that I've already accomplished.
-          </p>
-          <div class="work__container">
-            <!-- Project 1 -->
-            <h3 class="work__project-title">Coffee-House</h3>
-            <div class="work__img-wrapper work__image1">
-              <img               class="lazy loading"
-                src="/coffee-house.png"
-                alt="Wax Motif website"
-              />
-            </div>
-            <div class="work__project work__content1">
-              <h3 class="work__project-subtitle">Coffee-House</h3>
-              <p class="work__project-description1">
-                This web-site was done by: HTML5,CSS3,JavaScript
-              </p>
-              <p class="work__project-description2">
-                This app highlights a delightful coffee shop, offering details on favorite coffee choices, the cozy ambiance, and the convenience of a mobile ordering app.
-              </p>
-              <a class="btn work__project-btn" target="_blank" href="https://ostapmaksymiv.github.io/Website-Coffee-House/coffe-house/">Website</a>
-            </div>
-            <!-- Project 2 -->
-            <h3 class="work__project-title">Tic-Tac-Toe</h3>
-            <div class="work__img-wrapper work__image2">
-              <img               class="lazy loading"
-                src="/tic-tak-toe.png"
-                alt="Draze Force website"
-              />
-            </div>
-            <div class="work__project work__content2">
-              <h3 class="work__project-subtitle">Tic-Tac-Toe</h3>
-              <p class="work__project-description1">
-                This web-site was done by: HTML5,CSS3,JavaScript & TypeScript
-              </p>
-              <p class="work__project-description2">
-                This project is a simple implementation of the classic Tic Tac Toe game.
-                The main reason of doing it was to develop my OOP skills.
-              </p>
-              <a class="btn work__project-btn" target="_blank" href="https://ostapmaksymiv.github.io/tic-tac-toe-js/tic-tak-toe/">Website</a>
-            </div>
-            <!-- Project 3 -->
-            <!-- <h3 class="work__project-title">Artren</h3>
-            <div class="work__img-wrapper work__image3">
-              <img               class="lazy loading"
-                src="/artren.png"
-                alt="Artren website"
-              />
-            </div>
-            <div class="work__project work__content3">
-              <h3 class="work__project-subtitle">Artren</h3>
-              <p class="work__project-description1">
-                Aliquip eu ad est reprehenderit veniam irure exercitation in velit
-                enim ipsum.
-              </p>
-              <p class="work__project-description2">
-                Elit est amet quis incididunt officia velit eiusmod do amet. Sint
-                non qui nulla sit ex cillum non pariatur velit proident ut aliqua
-                fugiat incididunt id minim.
-              </p>
-              <a class="btn work__project-btn" href="#">Website</a>
-            </div> -->
-            <!-- Project 4 -->
-            <!-- <h3 class="work__project-title">Platform Pro</h3>
-            <div class="work__img-wrapper work__image4">
-              <img               class="lazy loading"
-                src="/platformpro.png"
-                alt="Platform Pro website"
-              />
-            </div>
-            <div class="work__project work__content4">
-              <h3 class="work__project-subtitle">Platform Pro</h3>
-              <p class="work__project-description1">
-                Labore magna ut non labore Lorem nisi culpa sint et quis sint.
-                Enim pariatur deserunt do ad exercitation.
-              </p>
-              <p class="work__project-description2">
-                Ea ut non cupidatat consequat sint elit ipsum culpa dolor cillum
-                commodo. Do esse excepteur cillum deserunt duis incididunt. Eu
-                tempor ullamco aliqua consectetur incididunt anim dolor sunt
-                laboris adipisicing cupidatat sint.
-              </p>
-              <a class="btn work__project-btn" href="#">Website</a>
-            </div> -->
-            <!-- Project 5 -->
-            <!-- <h3 class="work__project-title">Wallys Vegan</h3>
-            <div class="work__img-wrapper work__image5">
-              <img               class="lazy loading"
-                src="/wallysvegan.png"
-                alt="Wallys Vegan website"
-              />
-            </div>
-            <div class="work__project work__content5">
-              <h3 class="work__project-subtitle">Wallys Vegan</h3>
-              <p class="work__project-description1">
-                Sunt sint labore officia irure. Dolore pariatur nisi deserunt sunt
-                exercitation excepteur do reprehenderit fugiat Lorem sint ut.
-              </p>
-              <p class="work__project-description2">
-                Mollit ipsum mollit magna occaecat eiusmod sint fugiat est non
-                adipisicing esse fugiat deserunt minim. Enim occaecat velit eu non
-                amet nostrud officia duis.
-              </p>
-              <a class="btn work__project-btn" href="#">Website</a>
-            </div> -->
-            <!-- Project 6 -->
-            <!-- <h3 class="work__project-title">Old Portfolio</h3>
-            <div class="work__img-wrapper work__image6">
-              <img               class="lazy loading"
-                src="/portfolio.png"
-                alt="Portfolio website"
-              />
-            </div>
-            <div class="work__project work__content6">
-              <h3 class="work__project-subtitle">Old Portfolio</h3>
-              <p class="work__project-description1">
-                Aliquip eu ad est reprehenderit veniam irure exercitation in velit
-                enim ipsum.
-              </p>
-              <p class="work__project-description2">
-                Elit est amet quis incididunt officia velit eiusmod do amet. Sint
-                non qui nulla sit ex cillum non pariatur velit proident ut aliqua
-                fugiat incididunt id minim.
-              </p>
-              <a class="btn work__project-btn" href="#">Website</a>
-            </div> -->
-          </div>
-        </section>
-        <!-- <section id="contact" class="contact container section">
-          <h3 class="contact__title">Get in Touch</h3>
+        </div>
+        <div class="email fade-enter-done" style="animation-delay: 975ms;">
+          <a href="mailto:ostaperad@gmail.com" class="email__link"> ostaperad@gmail.com </a>
+        </div>
+  
+  
+        <a href="#" class="scrollup" id="scroll-up">
+          <i class="ri-arrow-up-line n_special"></i>
+          <i  class="ri-arrow-up-line special"></i>
+        </a>
+        <footer id="contact" class="contact section ">
+          <h3 class="contact__title">Get In Touch</h3>
           <p class="contact__description">
-            Whether you are starting a project, have business inquiries or just want to say hi, my inbox is always open so feel free to reach out and I will get back to you as soon as possible.
+            Whether you're kicking off a new project, have some business stuff to discuss, or just wanna drop a casual "hello", my inbox is wide open! Don't hesitate to hit me up, and I'll get back to you ASAP. Cheers!
           </p>
-          <a href="mailto:ostaperad@gmail.com" target="_blank" class="contact__btn btn">React out</a>
-        </section>
-      </main>
-      <footer class="footer container section">
-        <h3 class="footer__title">~ Ostap Maksymiv ~</h3>
-      </footer> -->
-      
-
-      <div class="social fade-enter-done" style="animation-delay: 975ms;">
-        <div class="social__list">
-          <li class="social__item">
-            <a href="https://github.com/OstapMaksymiv" class="social__link" target="_blank">
-              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                </path>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a href="https://www.linkedin.com/in/ostap-maksymiv-60909a259/" class="social__link" target="_blank">
-              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
-                </path>
-                <rect x="2" y="9" width="4" height="12">
-                </rect>
-                <circle cx="4" cy="4" r="2">
-                </circle>
-              </svg>
-            </a>
-          </li>
-        </div>
-      </div>
-      <div class="email fade-enter-done" style="animation-delay: 975ms;">
-        <a href="mailto:ostaperad@gmail.com" class="email__link"> ostaperad@gmail.com </a>
-      </div>
-
-
-      <a href="#" class="scrollup" id="scroll-up">
-        <i class="ri-arrow-up-line n_special"></i>
-        <i  class="ri-arrow-up-line special"></i>
-      </a>
-      <footer id="contact" class="contact section ">
-        <h3 class="contact__title">Get In Touch</h3>
-        <p class="contact__description">
-          Whether you're kicking off a new project, have some business stuff to discuss, or just wanna drop a casual "hello", my inbox is wide open! Don't hesitate to hit me up, and I'll get back to you ASAP. Cheers!
-        </p>
-        <a href="mailto:ostaperad@gmail.com" target="_blank" class="contact__btn btn">Buzz Me</a>
-        <h3 class="footer__title">~ ©Ostap Maksymiv ~</h3>
-
-        <div class="gradient-bg">
-          <svg xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <filter id="goo">
-                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8" result="goo" />
-                <feBlend in="SourceGraphic" in2="goo" />
-              </filter>
-            </defs>
-          </svg>
-          <div class="gradients-container">
-            <div class="g1"></div>
-            <div class="g2"></div>
-            <div class="g3"></div>
-            <div class="g4"></div>
-            <div class="g5"></div>
-            <div class="interactive"></div>
+          <a href="mailto:ostaperad@gmail.com" target="_blank" class="contact__btn btn">Buzz Me</a>
+          <h3 class="footer__title">~ ©Ostap Maksymiv ~</h3>
+  
+          <div class="gradient-bg">
+            <svg xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <filter id="goo">
+                  <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                  <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8" result="goo" />
+                  <feBlend in="SourceGraphic" in2="goo" />
+                </filter>
+              </defs>
+            </svg>
+            <div class="gradients-container">
+              <div class="g1"></div>
+              <div class="g2"></div>
+              <div class="g3"></div>
+              <div class="g4"></div>
+              <div class="g5"></div>
+              <div class="interactive"></div>
+            </div>
           </div>
-        </div>
-      </footer>
-  <!-- <div class="gradient-bg">
-    <svg xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <filter id="goo">
-          <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8" result="goo" />
-          <feBlend in="SourceGraphic" in2="goo" />
-        </filter>
-      </defs>
-    </svg>
-    <div class="gradients-container">
-      <div class="g1"></div>
-      <div class="g2"></div>
-      <div class="g3"></div>
-      <div class="g4"></div>
-      <div class="g5"></div>
-      <div class="interactive"></div>
-    </div>
-  </div> -->
-    <!-- <div class="c cursor"></div>
-    <div class="c cursor-follow"></div> -->
-    <script type="module" src="./src/main.ts"></script>
-    <script type="module" src="./src/main.js"></script>
-    <script src="./src/scrollreveal.min.js"></script>
-  </body>
+        </footer>
+    <!-- <div class="gradient-bg">
+      <svg xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <filter id="goo">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8" result="goo" />
+            <feBlend in="SourceGraphic" in2="goo" />
+          </filter>
+        </defs>
+      </svg>
+      <div class="gradients-container">
+        <div class="g1"></div>
+        <div class="g2"></div>
+        <div class="g3"></div>
+        <div class="g4"></div>
+        <div class="g5"></div>
+        <div class="interactive"></div>
+      </div>
+    </div> -->
+      <!-- <div class="c cursor"></div>
+      <div class="c cursor-follow"></div> -->
+      <script type="module" src="./src/main.ts"></script>
+      <script type="module" src="./src/main.js"></script>
+      <script src="./src/scrollreveal.min.js"></script>
+    </body>
+  </div>
 </html>

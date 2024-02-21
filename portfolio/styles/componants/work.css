@@ -18,9 +18,11 @@
     background-color:transparent;
     right: -16px;
     /* bottom: 183px; */
+    
     border-radius: 0 0 100vw 0;
     box-shadow: 5px 5px 0 5px var(--clr-dark);
     transform: rotate(180deg);
+    z-index: -1;
 }
 .work::after{
     content:'';
@@ -29,10 +31,12 @@
     height: var(--border-radius);
     background-color:transparent;
     left: -16px;
+    
     /* bottom: 183px; */
     border-radius: 0  0 100vw 0;
-    box-shadow: 5px 5px 0px 3.3px var(--clr-dark);
+    box-shadow: 5px 5px 0px 5px var(--clr-dark);
     transform: rotate(-90deg);
+    z-index: -1;
 }
 .work__title{
     font-size: var(--size-2xl);
@@ -64,9 +68,7 @@
     z-index: 1;
     transition: background-color .4s;
 }
-.work__img-wrapper:hover::after{
-    background-color: rgba(78, 70, 229, 0.1);
-}
+
 .work__project-description1{
     font-size: var(--size-sm);
     color: var(--clr-slate400);
@@ -295,6 +297,7 @@
 }
 @media (min-width:319px)  {
     .work::after, .work::before{
+        /* background-color: transparent; */
         bottom: 319px;
 
     }
@@ -336,7 +339,7 @@
     }
 } */
 
-@media screen and (min-width: 510px) {
+@media (min-width: 510px) {
     .work::after,
     .work::before {
         bottom: 303px;
@@ -351,17 +354,21 @@
 @media (min-width:519px)  {
     .work::after, .work::before{
         bottom: 327px;
-
-    }
-}
-@media (min-width:686px)  {
-    .work::after, .work::before{
-        bottom: 324px;
+        
 
     }
     /* .work::after{
-        left: ;
+        left: -16px;
+    }
+    .work::before{
+
     } */
+}
+@media (min-width:686px)  {
+    .work::after, .work::before{
+        bottom: 323px;
+
+    }
 }
 @media (min-width:820px)  {
     .work::after, .work::before{
@@ -383,6 +390,18 @@
 }
 @media (min-width:1280px)  {
     .work::after, .work::before{
+        bottom: 183px;
+
+    }
+}
+@media (min-width:1320px)  {
+    .work::after, .work::before{
+        bottom: 182px;
+
+    }
+}
+@media (min-width:1534px)  {
+    .work::after, .work::before{
         
         bottom: 183px;
 
@@ -394,5 +413,106 @@
     }
     .work{
         padding-bottom: 100px;
+    }
+}
+
+
+/* @media (any-hover: none) and (min-width: 511px) {
+    .work::after,
+    .work::before {
+        bottom: 30px;
+    }
+} */
+
+/* @media (any-hover: none) and (min-width:516px)  {
+    .work::after, .work::before{
+        bottom: 303px;
+
+    }
+} */
+/* @media (any-hover: none) and (min-width:511px)  {
+    .work::after, .work::before{
+        bottom: 310px;
+
+    }
+} */
+/* @media (any-hover: none) and (min-width:511px)  {
+    .work::after, .work::before{
+        bottom: 327px;
+        
+
+    }
+
+} */
+@media (any-hover: none) and (min-width:343px)  {
+    .work::after, .work::before{
+        bottom: 341px;
+
+    }
+}
+@media (any-hover: none) and (min-width:449px)  {
+    .work::after, .work::before{
+        bottom: 363px;
+
+    }
+}
+@media (any-hover: none) and (min-width:475px)  {
+    .work::after, .work::before{
+        bottom: 303px;
+
+    }
+}
+@media (any-hover: none) and (min-width:511px)  {
+    .work::after, .work::before{
+        bottom: 327px;
+
+    }
+}
+@media (any-hover: none) and (min-width:686px)  {
+    .work::after, .work::before{
+        bottom: 323px;
+
+    }
+}
+@media (any-hover: none) and (min-width:820px)  {
+    .work::after, .work::before{
+        bottom: 323px;
+
+    }
+}
+@media (any-hover: none) and (min-width:1024px)  {
+    .work::after, .work::before{
+        bottom: 305px;
+
+    }
+}
+@media (any-hover: none) and (min-width:1070px)  {
+    .work::after, .work::before{
+        bottom: 225px;
+
+    }
+}
+@media (any-hover: none) and (min-width:1280px)  {
+    .work::after, .work::before{
+        bottom: 183px;
+
+    }
+}
+@media (any-hover: none) and (min-width:1320px)  {
+    .work::after, .work::before{
+        bottom: 182px;
+
+    }
+}
+@media (any-hover: none) and (min-width:1534px)  {
+    .work::after, .work::before{
+        
+        bottom: 183px;
+
+    }
+}
+@media (any-hover: hover){
+    .work__img-wrapper:hover::after{
+        background-color: rgba(78, 70, 229, 0.1);
     }
 }
