@@ -8,5 +8,3 @@ It's a single-page site with sections for "About Me," "Projects," and "Contact."
 - CSS3
 - JavaScript
 - Libraries and tools such as Scrollreveal, Vite.
-## Contact
-I'm always open to new opportunities and collaborations. Feel free to reach out to me at [ostaperad@gmail.com](mailto:ostaperad@gmail.com).
