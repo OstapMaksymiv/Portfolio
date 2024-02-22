@@ -18,7 +18,7 @@
     background-color:transparent;
     right: -16px;
     /* bottom: 183px; */
-    
+    border: none;
     border-radius: 0 0 100vw 0;
     box-shadow: 5px 5px 0 5px var(--clr-dark);
     transform: rotate(180deg);
@@ -31,7 +31,7 @@
     height: var(--border-radius);
     background-color:transparent;
     left: -16px;
-    
+    border: none;
     /* bottom: 183px; */
     border-radius: 0  0 100vw 0;
     box-shadow: 5px 5px 0px 5px var(--clr-dark);
@@ -446,16 +446,28 @@
 } */
 @media (any-hover: none) and (min-width:343px)  {
     .work::after, .work::before{
-        bottom: 341px;
+        bottom: 342px;
 
     }
 }
+/* @media (any-hover: none) and (min-width:351px)  {
+    .work::after, .work::before{
+        bottom: 341px;
+
+    }
+} */
 @media (any-hover: none) and (min-width:449px)  {
     .work::after, .work::before{
         bottom: 363px;
 
     }
 }
+/* @media (any-hover: none) and (min-width:457px)  {
+    .work::after, .work::before{
+        bottom: 363px;
+
+    }
+} */
 @media (any-hover: none) and (min-width:475px)  {
     .work::after, .work::before{
         bottom: 303px;
@@ -468,6 +480,12 @@
 
     }
 }
+/* @media (any-hover: none) and (min-width:519px)  {
+    .work::after, .work::before{
+        bottom: 327px;
+
+    }
+} */
 @media (any-hover: none) and (min-width:686px)  {
     .work::after, .work::before{
         bottom: 323px;
