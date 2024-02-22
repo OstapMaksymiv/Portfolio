@@ -30,7 +30,17 @@
     z-index: 100;
     color: #f1f5f9 !important;
     /* border: 2px solid var(--clr-slate800) !important; */
-
+    transition:box-shadow 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid var(--clr-slate800);
+    position: relative;
+    overflow: hidden;
+    font-weight: 600;
+    letter-spacing: -0.05em;
+    background-color: inherit;
+    padding: 0.5em 1em;
+    border-radius: 6px;
 }
 .contact__btn::before{
     background:transparent !important ;
@@ -84,4 +94,31 @@
 }
 @media (min-width:1536px)  {
 
+}
+@media(any-hover: hover){
+    .contact__btn:hover {
+        /* transform: translateY(-3px); */
+        box-shadow: 0 10px 20px var(--clr-slate800),
+        0 6px 6px #957C84, 0 0 100px -10px var(--clr-slate800);
+
+    }
+    .contact__btn:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+        120deg,
+        transparent,
+        var( --clr-rose-btn),
+        transparent
+        );
+        transition: all 650ms;
+    }
+    
+    .contact__btn:hover:before {
+        left: 100%;
+    }
 }

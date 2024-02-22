@@ -26,12 +26,12 @@ const mobilenav = () => {
 
             mbnav.classList.add("mobile-nav-active")
             document.body.style.overflowY = "hidden";
-            document.documentElement.style.overflowY = "hidden";
+            // document.documentElement.style.overflowY = "hidden";
         }
         else{
             mbnav.classList.remove("mobile-nav-active")
             document.body.style.overflowY = "auto";
-            document.documentElement.style.overflowY = "auto";
+            // document.documentElement.style.overflowY = "auto";
         }
     })
     header__links.forEach(element => {
@@ -46,7 +46,7 @@ const mobilenav = () => {
                 ismobileopen = false;
                 mbnav.classList.remove("mobile-nav-active")
                 document.body.style.overflowY = "auto";
-                document.documentElement.style.overflowY = "auto";
+                // document.documentElement.style.overflowY = "auto";
                 elderSVG.style.display = "block";
                 newSVG.style.display = "none";
             })
@@ -56,7 +56,7 @@ const mobilenav = () => {
             if (window.innerWidth > initialWindowWidth && window.innerWidth > 768 && initialWindowWidth <= 768) {
                 ismobileopen = false;
                 document.body.style.overflowY = "auto";
-                document.documentElement.style.overflowY = "auto";
+                // document.documentElement.style.overflowY = "auto";
                 mbnav.classList.remove("mobile-nav-active")
                 elderSVG.style.display = "block";
                 newSVG.style.display = "none";
