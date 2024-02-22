@@ -458,7 +458,7 @@
 } */
 @media (any-hover: none) and (min-width:449px)  {
     .work::after, .work::before{
-        bottom: 363px;
+        bottom: 364px;
 
     }
 }
@@ -470,13 +470,13 @@
 } */
 @media (any-hover: none) and (min-width:475px)  {
     .work::after, .work::before{
-        bottom: 303px;
+        bottom: 304px;
 
     }
 }
 @media (any-hover: none) and (min-width:511px)  {
     .work::after, .work::before{
-        bottom: 327px;
+        bottom: 328px;
 
     }
 }
@@ -488,44 +488,44 @@
 } */
 @media (any-hover: none) and (min-width:686px)  {
     .work::after, .work::before{
-        bottom: 323px;
+        bottom: 324px;
 
     }
 }
-@media (any-hover: none) and (min-width:820px)  {
+/* @media (any-hover: none) and (min-width:820px)  {
     .work::after, .work::before{
-        bottom: 323px;
+        bottom: 324px;
 
     }
-}
+} */
 @media (any-hover: none) and (min-width:1024px)  {
     .work::after, .work::before{
-        bottom: 305px;
+        bottom: 306px;
 
     }
 }
 @media (any-hover: none) and (min-width:1070px)  {
     .work::after, .work::before{
-        bottom: 225px;
+        bottom: 226px;
 
     }
 }
 @media (any-hover: none) and (min-width:1280px)  {
     .work::after, .work::before{
-        bottom: 183px;
+        bottom: 184px;
 
     }
 }
 @media (any-hover: none) and (min-width:1320px)  {
     .work::after, .work::before{
-        bottom: 182px;
+        bottom: 183px;
 
     }
 }
 @media (any-hover: none) and (min-width:1534px)  {
     .work::after, .work::before{
         
-        bottom: 183px;
+        bottom: 184px;
 
     }
 }
