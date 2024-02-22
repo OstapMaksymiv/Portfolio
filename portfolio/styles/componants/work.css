@@ -7,7 +7,6 @@
     z-index: 999;
     background-color: var(--clr-dark);
     border-radius: 0px 0px 20px 20px;
-    /* border-bottom: 3px solid black; */
     position: relative;
 }
 .work::before{
@@ -17,7 +16,6 @@
     height: var(--border-radius);
     background-color:transparent;
     right: -16px;
-    /* bottom: 183px; */
     border: none;
     border-radius: 0 0 100vw 0;
     box-shadow: 5px 5px 0 5px var(--clr-dark);
@@ -32,7 +30,6 @@
     background-color:transparent;
     left: -16px;
     border: none;
-    /* bottom: 183px; */
     border-radius: 0  0 100vw 0;
     box-shadow: 5px 5px 0px 5px var(--clr-dark);
     transform: rotate(-90deg);
@@ -55,7 +52,6 @@
 }
 .work__img-wrapper{
     position: relative;
-    /* cursor: pointer; */
 }
 .work__img-wrapper::after{
     content: '';
@@ -98,23 +94,10 @@
     animation-range:200px 600px;
 }
 @keyframes fade-in{
-
     to {
         scale: 1; opacity: 1;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
 @media(min-width:320px){
     .work{
         padding-bottom: 30px;
@@ -124,15 +107,12 @@
 }
 
 @media (min-width:475px)  {
-
     .work__title{
         font-size: var(--size-3xl);
-
     }
     .work__description{
         font-size: var(--size-base);
         margin: 1.5rem auto;
-    
     }
     .work__project-title{
         font-size: var(--size-lg);
@@ -142,7 +122,6 @@
         font-size: var(--size-base);
         margin: 1.5rem auto;
         max-width: 350px;
-
     }
     .work__project-description2{
         font-size: var(--size-base);
@@ -151,7 +130,6 @@
     .work__project-btn{
         font-size: var(--size-base);
     }
-
 }
 @media (min-width:640px)  {
     .work__container{
@@ -226,7 +204,6 @@
         display: block;
         font-size: var(--size-base);
     }
-    
 }
 @media (min-width:768px)  {
     .work__project-subtitle{
@@ -245,7 +222,6 @@
 @media (min-width:1024px)  {
     .work__title{
     font-size: var(--size-4xl);
-    
     }
     .work__description{
     font-size: var(--size-lg);
@@ -266,7 +242,6 @@
 @media (min-width:1280px)  {
     .work__title{
     font-size: var(--size-5xl);
-    
     }
     .work__description{
     font-size: var(--size-xl);
@@ -292,94 +267,53 @@
 @media (max-width:318px)  {
     .work::after, .work::before{
         display: none;
-
     }
 }
 @media (min-width:319px)  {
     .work::after, .work::before{
         /* background-color: transparent; */
         bottom: 320px;
-
     }
 }
 @media (min-width:351px)  {
     .work::after, .work::before{
         bottom: 342px;
-
     }
 }
 @media (min-width:360px)  {
     .work::after, .work::before{
         bottom: 342px;
-
     }
 }
 @media (min-width:457px)  {
     .work::after, .work::before{
         bottom: 364px;
-
     }
 }
 @media (min-width:475px)  {
     .work::after, .work::before{
         bottom: 300px;
-
     }
 }
-/* @media (min-width:510px)  {
-    .work::after, .work::before{
-        bottom: 327px;
-
-    }
-} */
-/* @media (min-width: 510px) and (any-hover: hover) {
-    .work::after,
-    .work::before {
-        bottom: 303px !important; 
-    }
-} */
-
 @media (min-width: 510px) {
     .work::after,
     .work::before {
         bottom: 300px;
     }
 }
-/* @media (min-width:518px)  {
-    .work::after, .work::before{
-        bottom: 300px;
-
-    }
-} */
 @media (min-width:519px)  {
     .work::after, .work::before{
         bottom: 324px;
-        
-
     }
-    /* .work::after{
-        left: -16px;
-    }
-    .work::before{
-
-    } */
 }
 @media (min-width:686px)  {
     .work::after, .work::before{
         bottom: 320px;
-
     }
 }
-/* @media (min-width:820px)  {
-    .work::after, .work::before{
-        bottom: 320px;
-
-    }
-} */
 @media (min-width:1024px)  {
     .work::after, .work::before{
         bottom: 304px;
-
     }
 }
 @media (min-width:1070px)  {
@@ -391,22 +325,8 @@
 @media (min-width:1280px)  {
     .work::after, .work::before{
         bottom: 178px;
-
     }
 }
-/* @media (min-width:1320px)  {
-    .work::after, .work::before{
-        bottom: 178px;
-
-    }
-} */
-/* @media (min-width:1534px)  {
-    .work::after, .work::before{
-        
-        bottom: 178px;
-
-    }
-} */
 @media (min-width:1536px)  {
     .work__container{
         width: 70%;
@@ -415,120 +335,46 @@
         padding-bottom: 100px;
     }
 }
-
-
-/* @media (any-hover: none) and (min-width: 511px) {
-    .work::after,
-    .work::before {
-        bottom: 30px;
-    }
-} */
-
-/* @media (any-hover: none) and (min-width:516px)  {
-    .work::after, .work::before{
-        bottom: 303px;
-
-    }
-} */
-/* @media (any-hover: none) and (min-width:511px)  {
-    .work::after, .work::before{
-        bottom: 310px;
-
-    }
-} */
-/* @media (any-hover: none) and (min-width:511px)  {
-    .work::after, .work::before{
-        bottom: 327px;
-        
-
-    }
-
-} */
 @media (any-hover: none) and (min-width:343px)  {
     .work::after, .work::before{
         bottom: 343px;
-
     }
 }
-/* @media (any-hover: none) and (min-width:351px)  {
-    .work::after, .work::before{
-        bottom: 341px;
-
-    }
-} */
 @media (any-hover: none) and (min-width:449px)  {
     .work::after, .work::before{
         bottom: 365px;
-
     }
 }
-/* @media (any-hover: none) and (min-width:457px)  {
-    .work::after, .work::before{
-        bottom: 363px;
-
-    }
-} */
 @media (any-hover: none) and (min-width:475px)  {
     .work::after, .work::before{
         bottom: 301px;
-
     }
 }
 @media (any-hover: none) and (min-width:511px)  {
     .work::after, .work::before{
         bottom: 325px;
-
     }
 }
-/* @media (any-hover: none) and (min-width:519px)  {
-    .work::after, .work::before{
-        bottom: 327px;
-
-    }
-} */
 @media (any-hover: none) and (min-width:686px)  {
     .work::after, .work::before{
         bottom: 321px;
-
     }
 }
-/* @media (any-hover: none) and (min-width:820px)  {
-    .work::after, .work::before{
-        bottom: 324px;
-
-    }
-} */
 @media (any-hover: none) and (min-width:1024px)  {
     .work::after, .work::before{
         bottom: 305px;
-
     }
 }
 @media (any-hover: none) and (min-width:1070px)  {
     .work::after, .work::before{
         bottom: 225px;
-
     }
 }
 @media (any-hover: none) and (min-width:1280px)  {
     .work::after, .work::before{
         bottom: 179px;
-
     }
 }
-/* @media (any-hover: none) and (min-width:1320px)  {
-    .work::after, .work::before{
-        bottom: 179px;
-
-    }
-} */
-/* @media (any-hover: none) and (min-width:1534px)  {
-    .work::after, .work::before{
-        
-        bottom: 179px;
-
-    }
-} */
 @media (any-hover: hover){
     .work__img-wrapper:hover::after{
         background-color: rgba(78, 70, 229, 0.1);
