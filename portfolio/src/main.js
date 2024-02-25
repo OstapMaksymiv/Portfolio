@@ -1,3 +1,4 @@
+import { inject } from "@vercel/analytics"
 import '../styles/modern-normalize.css';
 import '../styles/style.css';
 import '../styles/componants/header.css';
@@ -64,5 +65,5 @@ sr.reveal(`.contact__title`,{scale:0.9, } )
 sr.reveal(`.contact__description`,{scale:1, delay:350} )
 sr.reveal(`.footer__title`,{scale:1, origin: 'bottom',distance: '40px',opacity: 0} )
 sr.reveal(`.contact__btn`,{scale:0.8, distance:0} )
-
+inject();
 
