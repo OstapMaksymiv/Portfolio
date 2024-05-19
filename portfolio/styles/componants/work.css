@@ -138,10 +138,7 @@
         grid-template-areas: 
         'image1 content1'
         'content2 image2'
-        'image3 content3'
-        'content4 image4'
-        'image5 content5'
-        'content6 image6';
+        'image3 content3';
         place-items: center;
     }
     .work__image1{
@@ -152,15 +149,6 @@
     }
     .work__image3{
         grid-area: image3;
-    }
-    .work__image4{
-        grid-area: image4;
-    }
-    .work__image5{
-        grid-area: image5;
-    }
-    .work__image6{
-        grid-area: image6;
     }
     .work__project{
         padding: 0 1rem;
@@ -173,15 +161,6 @@
     }
     .work__content3{
         grid-area: content3;
-    }
-    .work__content4{
-        grid-area: content4;
-    }
-    .work__content5{
-        grid-area: content5;
-    }
-    .work__content6{
-        grid-area: content6;
     }
     .work__project-title{
         display: none;
@@ -271,7 +250,6 @@
 }
 @media (min-width:319px)  {
     .work::after, .work::before{
-        /* background-color: transparent; */
         bottom: 320px;
     }
 }
