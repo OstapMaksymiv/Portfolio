@@ -137,7 +137,7 @@
         grid-template-columns:repeat(2 , 1fr);
         grid-template-areas: 
         'image3 content3'
-        'image4 content4'
+        'content4 image4'
         'image1 content1'
         'content2 image2';
         place-items: center;
