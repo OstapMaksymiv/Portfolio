@@ -140,7 +140,8 @@
         'image2 content2'
         'content3 image3'
         'image4 content4'
-        'content5 image5';
+        'content5 image5'
+        'image6 content6';
         place-items: center;
     }
     .work__image1{
@@ -157,6 +158,9 @@
     }
     .work__image5{
         grid-area: image5;
+    }
+    .work__image6{
+        grid-area: image6;
     }
     .work__project{
         padding: 0 1rem;
@@ -175,6 +179,9 @@
     }
     .work__content5{
         grid-area: content5;
+    }
+    .work__content6{
+        grid-area: content6;
     }
     .work__project-title{
         display: none;
